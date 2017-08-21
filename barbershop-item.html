@@ -23,7 +23,7 @@
           </ul>
         </nav>
         <div class="user-navigation">
-          <a class="login-link">Вход</a>
+          <a class="login-link" href="login.html">Вход</a>
         </div>
       </div>
     </header>
@@ -54,7 +54,7 @@
           <p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
           <div class="product-price">
             <span>2 900 ₽</span>
-            <a class="button" href="#">Купить</a>
+            <a class="button" href="cart.html">Купить</a>
           </div>
           <h3 class="section-title">В набор входят:</h3>
           <ul class="product-set">
@@ -92,23 +92,28 @@
       </div>
     </footer>
     <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
+      <h2 class="title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <label class="visually-hidden" for="login-icon-user">Логин</label>
+          <input class="login-icon-user"  id="login-icon-user" type="text" name="login" autocomplete="on" placeholder="Логин">
         </div>
         <div>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="login-icon-password">Пароль</label>
+          <input class="login-icon-password" id="login-icon-password" type="password" name="password" autocomplete="off" placeholder="Пароль">
         </div>
         <div class="login-password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
-          <a class="restore" href="#">Я забыл пароль!</a>
+          <label class="login-checkbox">
+            <input class="visually-hidden" type="checkbox" checked name="remember" id="remember">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="restore.html">Я забыл пароль!</a>
         </div>
         <button class="button" type="submit">Войти</button>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
     </section>
   </body>
 </html>
