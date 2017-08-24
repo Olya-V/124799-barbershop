@@ -3,27 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Барбершопа «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css"  type="text/css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container">
-        <div class="logo-navigation">
-          <a class="main-header-logo" href="barbershop-index.html">
-            <img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
-          </a>
-        </div>
-        <nav class="site-navigation">
-          <ul class="site-navigation-list">
-            <li><a href="barbershop-info.html">Информация</a></li>
-            <li><a href="barbershop-news.html">Новости</a></li>
-            <li><a href="barbershop-price.html">Прайс-лист</a></li>
-            <li class="site-navigation-current"><a href="barbershop-shop.html">Магазин</a></li>
-            <li><a href="barbershop-contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="user-navigation">
-          <a class="login-link" href="login.html">Вход</a>
+        <div class="main-navigation">
+          <div class="logo-navigation">
+            <a class="main-header-logo" href="barbershop-index.html">
+              <img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
+            </a>
+          </div>
+          <nav class="site-navigation">
+            <ul class="site-navigation-list">
+              <li><a href="barbershop-info.html">Информация</a></li>
+              <li><a href="barbershop-news.html">Новости</a></li>
+              <li><a href="barbershop-price.html">Прайс-лист</a></li>
+              <li class="site-navigation-current"><a href="barbershop-shop.html">Магазин</a></li>
+              <li><a href="barbershop-contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="user-navigation">
+            <a class="login-link" href="login.html">Вход</a>
+          </div>
         </div>
       </div>
     </header>
@@ -95,11 +99,12 @@
                 <img src="img/product-baxter-trip.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
               </div>
               <h3 class="product-title">
-                Набор для путешествий <span>«Baxter of California»</span>
+                <span class="product-category">Набор для путешествий</span>
+                <span class="product-item-title">«Baxter of California»</span>
               </h3>
             </a>
             <div class="product-price">
-              <span>2 900 ₽</span>
+              <span class="product-item-price">2 900 ₽</span>
               <a class="button" href="#">Купить</a>
             </div>
           </div>
@@ -109,25 +114,27 @@
                 <img src="img/product-baxter-condition.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
               </div>
               <h3 class="product-title">
-                Увлажняющий кондиционер <span>«Baxter of California»</span>
+                <span class="product-category">Увлажняющий кондиционер</span>
+                <span class="product-item-title">«Baxter of California»</span>
               </h3>
             </a>
             <div class="product-price">
-              <span>2 900 ₽</span>
+              <span class="product-item-price">2 900 ₽</span>
               <a class="button" href="#">Купить</a>
             </div>
           </div>
           <div class="product">
-            <a href="catalog-item.html">
+            <a href="product-item.html">
               <div class="product-image">
                 <img src="img/product-suavecito-gel.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
               </div>
               <h3 class="product-title">
-                Гель для волос <span>«Suavecito»</span>
+                <span class="product-category">Гель для волос</span>
+                <span class="product-item-title">«Suavecito»</span>
               </h3>
             </a>
             <div class="product-price">
-              <span>290 ₽</span>
+              <span class="product-item-price">290 ₽</span>
               <a class="button" href="#">Купить</a>
             </div>
           </div>
@@ -137,11 +144,12 @@
                 <img src="img/product-american-crew-coaline.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
               </div>
               <h3 class="product-title">   
-                Глина для укладки волос <span>«American crew»</span>
+                <span class="product-category">Глина для укладки волос</span>
+                <span class="product-item-title">«American crew»</span>
               </h3>
             </a>
             <div class="product-price">
-              <span>500 ₽</span>
+              <span class="product-item-price">500 ₽</span>
               <a class="button" href="#">Купить</a>
             </div>
           </div>
@@ -151,11 +159,12 @@
                   <img src="img/product-american-crew-gel.jpg" width="220" height="165" alt="Гель для волос «American crew»">
               </div>
               <h3 class="product-title">
-                Гель для волос<span> «American crew»</span>
+                <span class="product-category">Гель для волос</span>
+                <span class="product-item-title">«American crew»</span>
               </h3>
             </a>
             <div class="product-price">
-              <span>300 ₽</span>
+              <span class="product-item-price">300 ₽</span>
               <a class="button" href="#">Купить</a>
             </div>
           </div>
@@ -165,11 +174,12 @@
                   <img src="img/product-baxter-shaving.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
               </div>
               <h3 class="product-title">
-                Набор для бритья <span>«Baxter of California»</span>
+                <span class="product-category">Набор для бритья</span>
+                <span class="product-item-title">«Baxter of California»</span>
               </h3>
             </a>
             <div class="product-price">
-              <span>3 900 ₽</span>
+              <span class="product-item-price">3 900 ₽</span>
               <a class="button" href="#">Купить</a>
             </div>
           </div>
@@ -194,7 +204,7 @@
         </div>
         <div class="footer-social">
           <span>Давайте дружить!</span>
-          <ul class="footer-socila-links">
+          <ul class="footer-social">
             <li><a class="social-button social-button-vk" href="https://vk.com/htmlacademy">Вконтакте</a></li>
             <li><a class="social-button social-button-fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
             <li><a class="social-button social-button-ig" href="https://www.instagram.com/htmlacademy/">Инстаграм</a></li>
