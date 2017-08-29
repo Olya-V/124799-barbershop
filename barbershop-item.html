@@ -8,11 +8,11 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="main-header">
-      <div class="container">
-        <div class="main-navigation">
-          <div class="logo-navigation">
-            <a class="main-header-logo" href="barbershop-index.html">
+    <header class="main-header main-header--inner">
+      <div class="main-navigation main-navigation--inner">
+        <div class="container container--header">
+          <div class="logo-navigation logo-navigation--inner">
+            <a class="main-header-logo main-logo-header--inner" href="barbershop-index.html">
               <img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
             </a>
           </div>
@@ -25,7 +25,7 @@
               <li><a href="barbershop-contacts.html">Контакты</a></li>
             </ul>
           </nav>
-          <div class="user-navigation">
+          <div class="user-navigation user-navigation--inner">
             <a class="login-link" href="login.html">Вход</a>
           </div>
         </div>
@@ -40,39 +40,41 @@
           <li><a href="barbershop-shop-care.html">Средства для ухода</a></li>
           <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
         </ul>
-        <section class="product-photos">
-          <h2 class="visually-hidden">Изображения товара</h2>
-          <div class="product-photo-full">
-            <img src="img/product-big.jpg" width="486" height="524" alt="Фото всего набора">
-          </div>
-          <div class="product-photo-preview">
-            <img src="img/product-small-bag-left.jpg" width="166" height="175" alt="Фото в анфас">
-            <img src="img/product-small-bag.jpg" width="166" height="175" alt="Фото в профиль">
-            <img src="img/product-small-bag-top.jpg" width="166" height="175" alt="Фото отдельной части">
-          </div>
-        </section>
-        <section class="product-info">
-          <h2 class="visually-hidden">Описание товара</h2>
-          <p class="product-availability">Есть в наличии</p>
-          <p class="product-article">Артикул: dexter-ae</p>
-          <p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-          <div class="product-price">
-            <span class="product-item-price">2 900 ₽</span>
-            <a class="button" href="cart.html">Купить</a>
-          </div>
-          <h3 class="section-title">В набор входят:</h3>
-          <ul class="product-set">
-            <li>Средство для умывания (50 мл)</li>
-            <li>Увлажняющий крем (50 мл)</li>
-            <li>Крем для бритья (50 мл)</li>
-            <li>Крем после бритья, шампунь (50 мл)</li>
-            <li>Удобная кожаная косметичка</li>
-          </ul>
-        </section>
+        <div class="catalog-columns">
+          <section class="product-photos">
+            <h2 class="visually-hidden">Изображения товара</h2>
+            <div class="product-photo-full">
+              <img src="img/product-big.jpg" width="486" height="524" alt="Фото всего набора">
+            </div>
+            <div class="product-photo-preview">
+              <img src="img/product-small-bag-left.jpg" width="166" height="175" alt="Фото в анфас">
+              <img src="img/product-small-bag.jpg" width="166" height="175" alt="Фото в профиль">
+              <img src="img/product-small-bag-top.jpg" width="166" height="175" alt="Фото отдельной части">
+            </div>
+          </section>
+          <section class="product-info">
+            <h2 class="visually-hidden">Описание товара</h2>
+            <p class="product-availability">Есть в наличии</p>
+            <p class="product-article">Артикул: dexter-ae</p>
+            <p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            <div class="product-price">
+              <span class="product-item-price">2 900 ₽</span>
+              <a class="button" href="cart.html">Купить</a>
+            </div>
+            <h3 class="section-title">В набор входят:</h3>
+            <ul class="product-set">
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
-    <footer class="main-footer">
-      <div class="container">
+    <footer class="main-footer main-footer--inner">
+      <div class="container containter--footer">
         <div class="footer-contacts">
           <p> 
             Барбершоп «Бородинский»<br>
@@ -83,7 +85,7 @@
         </div>
         <div class="footer-social">
           <span>Давайте дружить!</span>
-          <ul class="footer-social">
+          <ul class="footer-social-list">
             <li><a class="social-button social-button-vk" href="https://vk.com/htmlacademy">Вконтакте</a></li>
             <li><a class="social-button social-button-fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
             <li><a class="social-button social-button-ig" href="https://www.instagram.com/htmlacademy/">Инстаграм</a></li>
